@@ -1,16 +1,62 @@
-# React + Vite
+# 🗂️ Task Manager - Project Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔗 Live Demo
 
-Currently, two official plugins are available:
+https://your-vercel-link.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Project Overview
 
-## React Compiler
+This is a **Task Manager Application** built using React.js that helps users efficiently organize and manage their daily tasks. The application implements full **CRUD (Create, Read, Update, Delete)** functionality.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* Add new tasks (**Create**)
+* View all tasks (**Read**)
+* Edit existing tasks (**Update**)
+* Delete tasks (**Delete**)
+* Mark tasks as completed
+* Filter tasks (All, Active, Completed)
+* Clear completed tasks
+* Data persistence using LocalStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+* React.js
+* JavaScript (ES6)
+* CSS
+* UUID (for unique IDs)
+* LocalStorage
+
+## 💾 Data Storage
+
+All task data is stored in the browser using **LocalStorage**.
+
+* Tasks are saved locally in the user's browser
+* Data persists even after page reload or browser restart
+* No backend or external database is used in this version
+
+## ⚙️ How It Works
+
+* State is managed using React hooks (`useState`)
+* Side effects handled using `useEffect`
+* Tasks are stored and retrieved from LocalStorage
+* CRUD operations are performed dynamically on the task list
+* Filtering logic is applied based on task completion status
+
+## 📂 Project Structure
+
+* App.js → Main logic and state management
+* Components → UI components (if used)
+* CSS → Styling
+
+## 📸 Future Improvements
+
+* Add user authentication
+* Integrate backend (Node.js + MongoDB)
+* Store data in database instead of LocalStorage
+* Add drag-and-drop functionality
+* Implement dark mode
+
+## 👨‍💻 Author
+
+Gopal Verma
